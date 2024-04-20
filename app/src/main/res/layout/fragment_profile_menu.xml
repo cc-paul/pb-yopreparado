@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragments.dialog_profile">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgClose"
+                android:src="@drawable/icn_close"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"/>
+            
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_horizontal" 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="#F27822"
+                    android:fontFamily="@font/man_bold"
+                    android:textSize="20dp"
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yo" />
+
+                <TextView
+                    android:textColor="#3A3A3C"
+                    android:fontFamily="@font/man_bold"
+                    android:textSize="20dp"
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Preparado" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="20dp"
+            app:cardElevation="1dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_margin="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/crdProfileChange"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="top"
+                            app:cardBackgroundColor="#F67E24"
+                            app:cardCornerRadius="50dp">
+
+                            <TextView
+                                android:textSize="30sp"
+                                android:id="@+id/tvInitial"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/man_bold"
+                                android:gravity="center"
+                                android:text=""
+                                android:textColor="@color/white" />
+
+
+                            <ImageView
+                                android:scaleType="centerCrop"
+                                android:id="@+id/imgProfile"
+                                android:src="@drawable/user"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tvFullName"
+                            android:fontFamily="@font/man_semi"
+                            android:text="Mark Men Doe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/tvEmail"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/man_reg"
+                            android:text="markmendoe@gmail.com"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="35dp"
+                            android:background="@drawable/layout_bg"
+                            android:backgroundTint="#F67E24"
+                            android:gravity="center">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/crdChangePassword"
+                                app:cardCornerRadius="8dp"
+                                android:layout_margin="2dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:textSize="12sp"
+                                    android:singleLine="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/man_medium"
+                                    android:gravity="center"
+                                    android:text="Change Password"
+                                    android:textColor="#F67E24" />
+
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:gravity="right|top"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imgLogout"
+                            android:src="@drawable/icn_logout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:background="#EAEFF6"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/lnEmergencyContact"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/icn_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center_vertical"
+                            android:fontFamily="@font/man_semi"
+                            android:text="Emergency Contact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/lnMunicipality"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/icn_city"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center_vertical"
+                            android:fontFamily="@font/man_semi"
+                            android:text="Barangays"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnContingencyPlan"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/icn_plan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center_vertical"
+                            android:fontFamily="@font/man_semi"
+                            android:text="Contingency Plan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnDRRM"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/icn_emergency"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center_vertical"
+                            android:fontFamily="@font/man_semi"
+                            android:text="Disaster Risk Reduction Management"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnVideos"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/icn_storm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center_vertical"
+                            android:fontFamily="@font/man_semi"
+                            android:text="Natural Calamities and Its History"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnNotification"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/icn_notification"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center_vertical"
+                            android:fontFamily="@font/man_semi"
+                            android:text="News and Notifications"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/lnVideoList"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/icn_video"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center_vertical"
+                            android:fontFamily="@font/man_semi"
+                            android:text="Audio and Visual Presentation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnFiles"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/icn_folder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center_vertical"
+                            android:fontFamily="@font/man_semi"
+                            android:text="Files and Documents"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnAboutUs"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/icn_users"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center_vertical"
+                            android:fontFamily="@font/man_semi"
+                            android:text="About Us"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnFAQ"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/icn_faq"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center_vertical"
+                            android:fontFamily="@font/man_semi"
+                            android:text="FAQ"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

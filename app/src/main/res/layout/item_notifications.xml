@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgEventIcon"
+            android:gravity="center"
+            android:src="@drawable/icn_emergency"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:textSize="13sp"
+                android:fontFamily="@font/man_semi"
+                android:text="Training : Local Community Center Offers New Training Programs to Enhance Skills and Knowledge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvBody"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:fontFamily="@font/man_reg"
+                android:text="The local community center is introducing an array of new training programs aimed at empowering individuals with valuable skills and knowledge to enhance their personal and professional development."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvAgo"
+                android:textColor="#F27822"
+                android:textSize="11sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="1 hour ago"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_marginBottom="5dp"
+                android:background="#515151"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

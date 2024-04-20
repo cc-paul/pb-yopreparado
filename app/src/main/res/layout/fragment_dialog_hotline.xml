@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.dialog_hotline">
+
+    <LinearLayout
+        android:background="@drawable/dialog_border"
+        android:paddingBottom="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="550dp">
+
+        <TextView
+            android:textColor="#F67E24"
+            android:fontFamily="@font/man_bold"
+            android:textSize="25sp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Emergency Hotline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/layout_bg">
+
+            <EditText
+                android:id="@+id/etSearchHotline"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:ems="10"
+                android:fontFamily="@font/man_semi"
+                android:hint="Search hotline here..."
+                android:textColorHint="#9E9E9E"
+                android:inputType="textNoSuggestions|text"
+                android:maxLines="1"
+                android:paddingStart="10sp"
+                android:paddingEnd="10sp"
+                android:textSize="13sp"></EditText>
+
+        </LinearLayout>
+
+        <TextView
+            android:fontFamily="@font/man_reg"
+            android:textSize="12sp"
+            android:text="To call. Press the number below the name. Please note additional charges when calling"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvHotline"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            tools:listitem="@layout/item_hotline"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

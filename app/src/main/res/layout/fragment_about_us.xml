@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragments.aboutus">
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/lnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:src="@drawable/icn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/man_bold"
+                android:text="About "
+                android:textColor="#F27822"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/man_bold"
+                android:text="Us"
+                android:textColor="#3A3A3C"
+                android:textSize="25dp" />
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="15dp"
+            android:id="@+id/imgLogo2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/yopreparado_logo" />
+
+        <LinearLayout
+            android:layout_margin="30dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="@font/man_extrabold"
+                android:text="Application Name"
+                android:textColor="#F27822"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="11dp"
+                android:fontFamily="@font/man_reg"
+                android:text="YoPreparado: A mobile App for Disaster Preparedness and Risk Reduction"
+                android:textColor="#3A3A3C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/man_extrabold"
+                android:text="Build Version"
+                android:textColor="#F27822"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="11dp"
+                android:fontFamily="@font/man_reg"
+                android:text="Version 1.1"
+                android:textColor="#3A3A3C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/man_extrabold"
+                android:text="Development Team"
+                android:textColor="#F27822"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="11dp"
+                android:fontFamily="@font/man_reg"
+                android:text="Project Manager: Jan Xavier M. Bautista"
+                android:textColor="#3A3A3C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="11dp"
+                android:fontFamily="@font/man_reg"
+                android:text="Lead Programmer: Vladimir M. Depano"
+                android:textColor="#3A3A3C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="11dp"
+                android:fontFamily="@font/man_reg"
+                android:text="Lead Programmer: Asia P. Vanta"
+                android:textColor="#3A3A3C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/man_extrabold"
+                android:text="List of References"
+                android:textColor="#F27822"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="11dp"
+                android:fontFamily="@font/man_reg"
+                android:text="http://cavite.gov.ph/home/pdrrmo"
+                android:textColor="#3A3A3C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/man_extrabold"
+                android:text="Our team would like to thank the following"
+                android:textColor="#F27822"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="11dp"
+                android:fontFamily="@font/man_reg"
+                android:text="Mr. King David Agreda (Adviser)"
+                android:textColor="#3A3A3C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="11dp"
+                android:fontFamily="@font/man_reg"
+                android:text="Mr. Cyrille Luna (Technical Critic)"
+                android:textColor="#3A3A3C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/man_extrabold"
+                android:text="Copyright"
+                android:textColor="#F27822"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="11dp"
+                android:fontFamily="@font/man_reg"
+                android:text="Copyright © 2022-2023 Cephalix Team"
+                android:textColor="#3A3A3C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="11dp"
+                android:fontFamily="@font/man_reg"
+                android:text="All rights reserved"
+                android:textColor="#3A3A3C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

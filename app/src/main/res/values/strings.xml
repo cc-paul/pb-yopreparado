@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">YoPreparado</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mapbox_access_token">sk.eyJ1IjoicGFnZW50ZSIsImEiOiJjbGg2NTYyejUwMnNrM2tuczR1eG8yN2s2In0.9Wb6cG1L8J1usQ0bB3p1sQ</string>
+</resources>
