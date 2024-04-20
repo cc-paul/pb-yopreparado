@@ -130,5 +130,5 @@ interface updateViewAPI {
 
 interface getWeatherAPI {
      @GET("https://api.openweathermap.org/data/2.5/weather?lat=14.4791&lon=120.8970&")
-     fun getWeatherData(@Query("appid") key: String = "f88bb901cd2915e2d9b8e9c78123c46e") : Call<weatherDataResponse>
+     fun getWeatherData(@Query("appid") key: String = "") : Call<weatherDataResponse>
 }
